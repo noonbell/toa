@@ -1014,7 +1014,7 @@ describe('app.context', function () {
     var app = toa()
 
     assert.throws(function () {
-      app.config = []
+      app.config = null
     })
     assert.strictEqual(app.config.poweredBy, 'Toa')
   })
